@@ -18,7 +18,7 @@ Hardware costs should be in the range of 20 €, so it's quite cheap. It consist
 - a voltage divider to monitor the battery
 
 This is the basic setup
-[Layout](img/layout.png)
+![Layout](img/layout.png?raw=true)
 
 This is the source I used most.
 [The source:] (https://things4u.github.io/HardwareGuide/Arduino/Mini-Sensor-HTU21/mini-lora.html)
@@ -37,15 +37,15 @@ The smartmeter data is encoded into the TTN payload:
 - 2 bytes battery voltage in MV
 
 This is how it should look like in the TTN console:
-[TTN Console](img/TTN_Console.png)
+![TTN Console](img/TTN_Console.png?raw=true)
 
 In TTN I use the HTTP integration to send the data to my webserver (it's plain hosting, so no access to MQTT).
-[TTN Integration](img/TTN_http.png)
+![TTN Integration](img/TTN_http.png?raw=true)
 
 On the webserver, the [Volkszaehler] (https://www.volkszaehler.org/) is installed. A little script (which needs some additional security features) sends the data to the Volkszaehler middleware.
 
 E voilá :-)
-[Webinterface](img/webinterface.png)
+![Webinterface](img/webinterface.png?raw=true)
 
 
 
