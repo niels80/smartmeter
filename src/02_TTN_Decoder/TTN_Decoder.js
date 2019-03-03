@@ -5,7 +5,8 @@ function Decoder(bytes, port) {
   for (var i = 0; i < 8; i++) {
     energiemenge += bytes[i] * Math.pow(2, 8 * (7-i)) ;
   }
-  energiemenge = Math.round(energiemenge/10000  *100)/100
+  energiemenge = energiemenge/10000
+
   var leistung = 0;
   for (i = 0; i < 4; i++) {
     leistung += bytes[i+8] * Math.pow(2, 8 * (3-i))  ;
