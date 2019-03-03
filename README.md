@@ -1,4 +1,4 @@
-# Smartmeter
+# Read smartmeter data via LoRa/TTN to your own webserver
 
 This little gadget collects data from a smartmeter via the IR-interface and sends them via LoraWan/The Things Network to a private webserver (or any other integration like Cayenne etc.)
 
