@@ -20,7 +20,7 @@ This is the basic setup
 ![Layout](img/layout.png?raw=true)
 
 This is the source I used most.
-[The source:] (https://things4u.github.io/HardwareGuide/Arduino/Mini-Sensor-HTU21/mini-lora.html)
+![The source:] (https://things4u.github.io/HardwareGuide/Arduino/Mini-Sensor-HTU21/mini-lora.html)
 
 As the inverter and the Schmitt-Trigger draw quite some current (>10mA), they are switched off during standby. The LED is also desoldered of course. I guess the challenge for battery life will be the consumption during the wake phase, not the idle power.
 
@@ -42,7 +42,7 @@ This is how it should look like in the TTN console:
 In TTN I use the HTTP integration to send the data to my webserver (it's plain hosting, so no access to MQTT).
 ![TTN Integration](img/TTN_http.png?raw=true)
 
-On the webserver, the [Volkszaehler] (https://www.volkszaehler.org/) is installed. A little script (which needs some additional security features) sends the data to the Volkszaehler middleware.
+On the webserver, the ![Volkszaehler] (https://www.volkszaehler.org/) is installed. A little script (which needs some additional security features) sends the data to the Volkszaehler middleware.
 
 E voilá :-)
 ![Webinterface](img/webinterface.png?raw=true)
