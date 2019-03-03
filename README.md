@@ -44,7 +44,7 @@ In TTN I use the HTTP integration to send the data to my webserver (it's plain h
 
 On the webserver, the ![Volkszaehler](https://www.volkszaehler.org/) is installed. A little script (which needs some additional security features) sends the data to the Volkszaehler middleware.
 
-E voilá :-)
+Et voilá :-)
 ![Webinterface](img/webinterface.png?raw=true)
 
 
