@@ -1,4 +1,4 @@
-# Read smartmeter data via LoRa/TTN to your own webserver
+# Send smartmeter data via LoRa/TTN to your own webserver
 
 This little gadget collects data packages from a smartmeter via the IR-interface and transmits them every minute via LoraWan/The Things Network to a private webserver (or any other integration like Cayenne etc.). It's battery powered with standby consumption of 50-100µA.
 
