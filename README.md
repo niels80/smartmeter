@@ -2,8 +2,8 @@
 
 This little gadget collects data packages from a smartmeter via the IR-interface and transmits them every minute via LoraWan/The Things Network to a private webserver (or any other integration like Cayenne etc.). It's battery powered with standby consumption of 50-100µA.
 
-
-![This is how it looks](img/device2.jpg?raw=true)
+This is the basic setup
+![Layout](img/layout.png?raw=true)
 
 The software is quite quick and dirty and the hardware amateur level. The project was mainly meant to be a prove of concept. I wanted to check if LoRa can transmit smart meter readings from within a metal container in the basement behind at least four walls of massive ferro-concrete. And hey, it works :-)
 
@@ -16,11 +16,10 @@ Hardware costs should be in the range of 20 €, so it's quite cheap. It consist
 - an inverter plus Optoschmitt detector to receive the infrared-data from the smartmeter
 - a voltage divider to monitor the battery
 
-This is the basic setup
-![Layout](img/layout.png?raw=true)
-
+![This is how it looks](img/device2.jpg?raw=true)
 This is the source I used most.
-![The source:](https://things4u.github.io/HardwareGuide/Arduino/Mini-Sensor-HTU21/mini-lora.html)
+
+![Mini-Lora](https://things4u.github.io/HardwareGuide/Arduino/Mini-Sensor-HTU21/mini-lora.html)
 
 As the inverter and the Schmitt-Trigger draw quite some current (>10mA), they are switched off during standby. The LED is also desoldered of course. I guess the challenge for battery life will be the consumption during the wake phase, not the idle power.
 
@@ -32,9 +31,9 @@ Depending on your meter you might need to adjust some numbers here. A full imple
 Best thing is to just read out some SML packages and see if parameters need to be adjusted. I have a EHZ EDL Smartmeter. 
 
 The smartmeter data is encoded into the TTN payload:
-- 8 bytes energy (total) in Wh
+- 8 bytes energy (total) in kWh/10000
 - 4 bytes actual power consumption in W 
-- 2 bytes battery voltage in MV
+- 2 bytes battery voltage in mV
 
 This is how it should look like in the TTN console:
 ![TTN Console](img/TTN_Console.png?raw=true)
