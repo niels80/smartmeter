@@ -1,9 +1,9 @@
-# Smartmeter
+# Read smartmeter data via LoRa/TTN to your own webserver
 
 This little gadget collects data from a smartmeter via the IR-interface and sends them via LoraWan/The Things Network to a private webserver (or any other integration like Cayenne etc.)
 
 
-[This is how it looks](img/device2.jpg)
+![This is how it looks](img/device2.jpg?raw=true)
 
 The software is quite quick and dirty and the hardware on a low amateur level. The project was mainly meant to be a prove of concept if I can access my smart meter readings within a metal container behind four walls of ferro-concrete.
 And hey, it works :-)
